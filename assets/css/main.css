@@ -1,5 +1,23 @@
 @import '../fonts/fonts.css';
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+
+@import "../css/normalize.css";
+
+@import '../../components/page/page.css';
+@import "../../components/footer/footer.css";
+@import "../../components/header/haeder.css";
+@import "../../components/main/main.css";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 :root {
     --white: #ffffff;
     --black: #212429;

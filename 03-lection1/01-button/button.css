@@ -1,1 +1,102 @@
 /* Стилизация кнопки */
+
+.btn__components{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btns{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 100px;
+    height: 300px;
+}
+
+.btns__default, .btns__hover{
+    display: flex;
+    justify-content: space-between;;
+    width: 1200px;
+}
+
+
+
+button{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    /* main style for button */
+}
+
+/* common padding btns */
+
+.btn__primary{
+    padding: 16px 66px 16px 66px;
+}
+
+.btn__secondary{
+    padding: 15px 56px 15px 56px;
+}
+
+.btn__alternate{
+    padding: 15px 61px 15px 61px;
+}
+
+/* add background */
+
+.btn__primary-default{
+    background: #4263EB;
+}
+.btn__secondary-default{
+    background: #7048E8;
+}
+
+.btn__alternate-default{
+    background: #E5E5E5;
+    color: #495057;
+}
+
+.btn__primary-hover{
+    background: #2342C0;
+    transition: background-color, opacity 0.5s;
+}
+
+.btn__secondary-hover{
+    background: #5028C6;
+}
+
+.btn__alternate-hover{
+    background: #E5E5E5;
+    border: 1px solid #212429;
+    color: #495057;
+}
+
+.btn__primary-disabled{
+    background: #4263EB;
+    opacity: 0.5;
+}
+
+.btn__secondary-disabled{
+    background: #7048E8;
+    opacity: 0.5;
+}
+
+.btn__alternate-disabled{
+    border: 1px solid #ACB5BD;
+    background: #E5E5E5;
+    color: #495057;
+    opacity: 0.5;
+}
+
+.btn__primary-hover:hover{
+    background: #5028C6;
+    opacity: 0.5;
+}
