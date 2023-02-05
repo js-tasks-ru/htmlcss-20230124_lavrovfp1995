@@ -15,6 +15,12 @@
     color: #212429;
 }
 
+
+.previev{
+    height: 400px;
+    background: #F9FAFC;
+}
+
 .main__footer{
     display: flex;
     justify-content: center;
@@ -23,6 +29,7 @@
 }
 
 .footer__title{
+    padding-top: 72px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
@@ -32,6 +39,8 @@
 }
 
 .footer__description{
+    padding-top: 32px;
+    padding-bottom: 136px;
     max-width: 600px;
     font-family: 'Inter';
     font-style: normal;
