@@ -1,1 +1,93 @@
-/* Стилизация аккордеона */
+.accordion__body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper > .accordion:not(:first-child){
+    margin-top: 8px;
+}
+
+.accordion{
+    width: 730px;
+    padding: 24px 0px 24px 32px;
+    background: #FFFFFF;
+    border: 1px solid #ACB5BD;
+    border-radius: 8px;
+}
+
+.accordion__summary{
+    max-width: 100%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #212429;
+    cursor: pointer;
+    position: relative;
+}
+
+.accordion__summary-text{
+    padding-top: 16px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #495057;
+}
+
+
+
+/* delition marks in accordion */
+
+/* Печему-то первый вариант не скрывает маркер у summary */
+
+/* .summary::-webkit-details-marker{
+    display: none;
+} */
+
+details > summary{
+    list-style: none;
+}
+
+.accordion__summary::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background-color: #212429;
+    top: 50%;
+    right: 10%;
+    rotate: 90deg;
+    transition: rotate 0.7s;
+}
+
+.accordion__summary::before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background-color: #212429;
+    top: 50%;
+    right: 10%;
+    rotate: 180deg;
+    transition: rotate 0.7s;
+}
+
+
+.accordion__summary:hover::before{
+    rotate: 120deg;
+}
+
+.accordion__summary:hover::after{
+    rotate: 60deg;
+}
